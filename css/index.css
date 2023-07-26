@@ -895,7 +895,7 @@ width: 100%;   height: 550px;
    margin-right: -15px;
    margin-left: -15px;
 }
-#attractions > .row > .col-1, #attractions > .row > .col-2
+#attractions > .row > .col-1, #attractions > .row > .col-2, #attractions > .row > .col-3
 {
    box-sizing: border-box;
    font-size: 0;
@@ -904,7 +904,7 @@ width: 100%;   height: 550px;
    padding-left: 15px;
    position: relative;
 }
-#attractions > .row > .col-1, #attractions > .row > .col-2
+#attractions > .row > .col-1, #attractions > .row > .col-2, #attractions > .row > .col-3
 {
    float: left;
 }
@@ -914,7 +914,7 @@ width: 100%;   height: 550px;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 50%;
+   width: 33.33333333%;
    text-align: left;
 }
 #attractions > .row > .col-1 > .col-1-padding
@@ -929,7 +929,7 @@ width: 100%;   height: 550px;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   width: 50%;
+   width: 33.33333333%;
    text-align: left;
 }
 #attractions > .row > .col-2 > .col-2-padding
@@ -937,6 +937,15 @@ width: 100%;   height: 550px;
    box-sizing: border-box;
    width: 100%;
    padding: 50px 0 50px 0;
+}
+#attractions > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 33.33333333%;
+   text-align: left;
 }
 #attractions:before,
 #attractions:after,
@@ -953,7 +962,7 @@ width: 100%;   height: 550px;
 }
 @media (max-width: 480px)
 {
-#attractions > .row > .col-1, #attractions > .row > .col-2
+#attractions > .row > .col-1, #attractions > .row > .col-2, #attractions > .row > .col-3
 {
    float: none;
    width: 100%;
@@ -1113,7 +1122,6 @@ width: 100%;   height: 550px;
    -webkit-appearance: none;
    margin: 10px 0 10px 0 ;
 }
-}
 #contactButton:focus
 {
    outline: 0;
@@ -1204,7 +1212,7 @@ width: 100%;}
 }
 #attractionsCarousel .frame
 {
-   width: 455px;
+   width: 293px;
    display: inline-block;
    float: left;
    height: 494px;
@@ -1247,31 +1255,6 @@ width: 100%;}
    margin: 0;
    box-sizing: border-box;
    width: 100%;
-}
-#attractionsButton
-{
-   box-sizing: border-box;
-   line-height: 35px;
-   text-decoration: none;
-   vertical-align: top;
-   border: 1px solid #FF6000;
-   border-radius: 0px;
-   background-color: #FF6000;
-   background-image: none;
-   color: #FFFFFF;
-   font-family: Cairo;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 16px;
-   padding: 0;
-   text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
-}
-}
-#attractionsButton:focus
-{
-   outline: 0;
 }
 #wb_bannerHeading1
 {
@@ -1492,7 +1475,6 @@ width: 100%;}
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
-}
 }
 #bannerButton:focus
 {
@@ -2840,6 +2822,206 @@ width: 100%;}
    margin-right: auto;
    vertical-align: top;
 }
+#wb_Carousel2
+{
+   background-color: #CCCCCC;
+   background-image: none;
+   border-radius: 0px;
+   margin: 0;
+}
+#wb_Carousel2
+{
+   box-sizing: border-box;
+width: 100%;}
+#Carousel2
+{
+   position: relative;
+   margin: 0;
+   line-height: 1;
+   height: 100%;
+   box-sizing: border-box;
+}
+#Carousel2 .carousel-inner
+{
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.carousel.pointer-event
+{
+   -ms-touch-action: pan-y;
+   touch-action: pan-y;
+}
+#Carousel2 .carousel-inner::after
+{
+   display: block;
+   clear: both;
+   content: "";
+}
+#Carousel2 .carousel-inner > .carousel-item
+{
+   display: none;
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-right: -100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   transition: transform 500ms ease-in-out;
+   height: 100%;
+   text-align: left;
+}
+#Carousel2 .carousel-item-next:not(.carousel-item-start), #Carousel2 .active.carousel-item-end
+{
+   transform: translateX(100%);
+}
+#Carousel2 .carousel-item-prev:not(.carousel-item-end), #Carousel2 .active.carousel-item-start
+{
+   transform: translateX(-100%);
+}
+#Carousel2 .carousel-item-inner
+{
+   min-height: 494px;
+   padding: 0;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 100%;
+   box-sizing: border-box;
+}
+#Carousel2 .carousel-inner > .carousel-item > img, #Carousel2 .carousel-inner > .carousel-item > a > img
+{
+   display: block;
+   line-height: 1;
+}
+#Carousel2 .carousel-inner > .active, #Carousel2 .carousel-inner > .carousel-item-next, #Carousel2 .carousel-inner > .carousel-item-prev
+{
+   display: block;
+}
+#Carousel2 .carousel-inner > .carousel-item-next, #Carousel2 .carousel-inner > .carousel-item-prev
+{
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+#Carousel2 .frame
+{
+   width: 293px;
+   display: inline-block;
+   float: left;
+   height: 494px;
+}
+#Carousel2 .frame-1
+{
+   background-color: transparent;
+   background-image: url('../images/winch1.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#wb_Carousel3
+{
+   background-color: #CCCCCC;
+   background-image: none;
+   border-radius: 0px;
+   margin: 0;
+}
+#wb_Carousel3
+{
+   box-sizing: border-box;
+width: 100%;}
+#Carousel3
+{
+   position: relative;
+   margin: 0;
+   line-height: 1;
+   height: 100%;
+   box-sizing: border-box;
+}
+#Carousel3 .carousel-inner
+{
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.carousel.pointer-event
+{
+   -ms-touch-action: pan-y;
+   touch-action: pan-y;
+}
+#Carousel3 .carousel-inner::after
+{
+   display: block;
+   clear: both;
+   content: "";
+}
+#Carousel3 .carousel-inner > .carousel-item
+{
+   display: none;
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-right: -100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   transition: transform 500ms ease-in-out;
+   height: 100%;
+   text-align: left;
+}
+#Carousel3 .carousel-item-next:not(.carousel-item-start), #Carousel3 .active.carousel-item-end
+{
+   transform: translateX(100%);
+}
+#Carousel3 .carousel-item-prev:not(.carousel-item-end), #Carousel3 .active.carousel-item-start
+{
+   transform: translateX(-100%);
+}
+#Carousel3 .carousel-item-inner
+{
+   min-height: 543px;
+   padding: 0;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 100%;
+   box-sizing: border-box;
+}
+#Carousel3 .carousel-inner > .carousel-item > img, #Carousel3 .carousel-inner > .carousel-item > a > img
+{
+   display: block;
+   line-height: 1;
+}
+#Carousel3 .carousel-inner > .active, #Carousel3 .carousel-inner > .carousel-item-next, #Carousel3 .carousel-inner > .carousel-item-prev
+{
+   display: block;
+}
+#Carousel3 .carousel-inner > .carousel-item-next, #Carousel3 .carousel-inner > .carousel-item-prev
+{
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+#Carousel3 .frame
+{
+   width: 293px;
+   display: inline-block;
+   float: left;
+   height: 543px;
+}
+#Carousel3 .frame-1
+{
+   background-color: transparent;
+   background-image: url('../images/winch2.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
+}
 #wb_Shape1
 {
    position: absolute;
@@ -2847,7 +3029,7 @@ width: 100%;}
    top: 10px;
    width: 62px;
    height: 29px;
-   z-index: 29;
+   z-index: 30;
 }
 #bannerButton
 {
@@ -2867,14 +3049,14 @@ width: 100%;}
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 24;
+   z-index: 25;
 }
 #contactButton
 {
    display: inline-block;
    width: 87px;
    height: 30px;
-   z-index: 23;
+   z-index: 24;
 }
 #wb_bannerHeading1
 {
@@ -2888,7 +3070,7 @@ width: 100%;}
    width: 24px;
    height: 40px;
    text-align: center;
-   z-index: 28;
+   z-index: 29;
 }
 #wb_footerIcon2
 {
@@ -2896,7 +3078,7 @@ width: 100%;}
    width: 24px;
    height: 40px;
    text-align: center;
-   z-index: 27;
+   z-index: 28;
 }
 #wb_footerIcon1
 {
@@ -2904,7 +3086,7 @@ width: 100%;}
    width: 24px;
    height: 40px;
    text-align: center;
-   z-index: 26;
+   z-index: 27;
 }
 #wb_Card2
 {
@@ -2934,6 +3116,12 @@ width: 100%;}
    width: 100%;
    z-index: 16;
 }
+#wb_Carousel3
+{
+}
+#wb_Carousel2
+{
+}
 #wb_Carousel1
 {
 }
@@ -2941,7 +3129,7 @@ width: 100%;}
 {
    display: inline-block;
    width: 219px;
-   z-index: 20;
+   z-index: 21;
 }
 #wb_IconFont1
 {
@@ -2951,7 +3139,7 @@ width: 100%;}
    width: 68px;
    height: 74px;
    text-align: center;
-   z-index: 30;
+   z-index: 31;
 }
 #wb_Heading3
 {
@@ -2969,20 +3157,13 @@ width: 100%;}
    margin-top: 81px;
    width: 433px;
    height: 89px;
-   z-index: 44;
+   z-index: 45;
 }
 #wb_galleryCollage
 {
    display: inline-block;
    width: 100%;
    z-index: 14;
-}
-#attractionsButton
-{
-   display: inline-block;
-   width: 173px;
-   height: 37px;
-   z-index: 19;
 }
 #wb_footer
 {
@@ -3298,7 +3479,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#attractions > .row > .col-1, #attractions > .row > .col-2
+#attractions > .row > .col-1, #attractions > .row > .col-2, #attractions > .row > .col-3
 {
    padding-right: 15px;
    padding-left: 15px;
@@ -3329,6 +3510,14 @@ body
    width: 100%;
    padding: 30px 0 30px 0;
 }
+#attractions > .row > .col-3
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
 #wb_Divider4
 {
    visibility: visible;
@@ -3339,7 +3528,7 @@ body
 #Divider4
 {
    min-height: 0;
-   margin-top: 0px;
+   margin-top: 10px;
    margin-bottom: 0px;
    padding: 25px 15px 25px 15px;
    flex-direction: row-reverse;
@@ -3416,19 +3605,6 @@ body
 {
    margin: 0;
    padding: 10px 0 10px 0;
-}
-#attractionsButton
-{
-   width: 180px;
-   height: 42px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-}
-#attractionsButton
-{
-   line-height: 40px;
 }
 #wb_bannerHeading1
 {
@@ -3940,7 +4116,6 @@ body
    background-color: #44546A;
    background-image: none;
    background-image: none;
-   border: 0px solid #000000;
    border-radius: 17px;
 }
 #wb_Text3
@@ -4079,6 +4254,36 @@ body
    visibility: visible;
    display: block;
    margin: 0;
+   padding: 0;
+}
+#wb_Carousel2
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#wb_Carousel2
+{
+   margin: 0;
+}
+#Carousel2 .carousel-item-inner
+{
+   min-height: 388px;
+   padding: 0;
+}
+#wb_Carousel3
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#wb_Carousel3
+{
+   margin: 0;
+}
+#Carousel3 .carousel-item-inner
+{
+   min-height: 388px;
    padding: 0;
 }
 }

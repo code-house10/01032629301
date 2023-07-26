@@ -63,6 +63,28 @@
             e.currentTarget.classList.remove('show');
          });
       });
+      var elementCarousel2 = document.querySelector('#Carousel2');
+      elementCarousel2.addEventListener('slid.bs.carousel', function(e)
+      {
+         switch(e.to)
+         {
+            case 0:
+               $('#Carousel2').bootstrapcarousel(0);
+               break;
+         }
+      });
+      var Carousel2 = new bootstrap.Carousel('#Carousel2', {interval: 0, pause: false});
+      var elementCarousel3 = document.querySelector('#Carousel3');
+      elementCarousel3.addEventListener('slid.bs.carousel', function(e)
+      {
+         switch(e.to)
+         {
+            case 0:
+               $('#Carousel2').bootstrapcarousel(0);
+               break;
+         }
+      });
+      var Carousel3 = new bootstrap.Carousel('#Carousel3', {interval: 0, pause: false});
    });
 </script>
 <script>   
@@ -192,7 +214,7 @@
          <div class="row">
             <div class="col-1">
                <div id="wb_Text2">
-                  <p>عروض و مهارات خاصة تتمتع بها شركه المصطفى لنقل الاثاث و تغليف الموبيليا كما تقدم عمالة متكاملة و أقوياء و يتصفون بالصدق و الأمانة و وفرت لك أيضا أشياءعديدة منها</p>
+                  <p>عروض و مهارات خاصة تتمتع بها شركه مكة لنقل الاثاث و تغليف الموبيليا كما تقدم عمالة متكاملة و أقوياء و يتصفون بالصدق و الأمانة و وفرت لك أيضا أشياءعديدة منها</p>
                   <br>
                </div>
                <div id="wb_Text4">
@@ -255,7 +277,7 @@
                      <div id="Card2-card-item2">جميع خدمات نقل الأثاث</div>
                      <div id="Card2-card-item3">تقدم شركة المصطفى لنقل العفش أفضل وأهم خدمات نقل العفش ، وهي تغليف العفش ، وده علشان حماية قطع الأثاث والأجهزة من أي أضرار أثناء النقل من خدش أو تجريح وكسر</div>
                      <hr id="Card2-card-item4">
-                     <div id="Card2-card-item5"><a href="tel:01032629301">إتصل الأن</a></div>
+                     <div id="Card2-card-item5"><a href="tel:01202202382">إتصل الأن</a></div>
                   </div>
                </div>
             </div>
@@ -350,7 +372,28 @@
             </div>
             <div class="col-2">
                <div class="col-2-padding">
-                  <a id="attractionsButton" href="tel:01032629301">اتصل اليوم وإحجز ميعاد</a>
+                  <div id="wb_Carousel2">
+                     <div id="Carousel2" class="carousel slide">
+                        <div class="carousel-inner">
+                           <div class="carousel-item frame-1 active">
+                              <div class="carousel-item-inner">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_Carousel3">
+                  <div id="Carousel3" class="carousel slide">
+                     <div class="carousel-inner">
+                        <div class="carousel-item frame-1 active">
+                           <div class="carousel-item-inner">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
